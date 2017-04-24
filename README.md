@@ -18,7 +18,7 @@ Install with NuGet. Search for "Rhythm.Caching.Umbraco".
 ## Invalidators
 
 * **InvalidatorByPage** When a content node is changed, this invalidates a cache by the node's ID.
-* **InvalidatorByPageAliases** When a content node matching the specified content type aliases is published, this invalidates a cached.
+* **InvalidatorByPageAliases** When a content node matching any of the specified content type aliases is published, this invalidates a cache.
 * **InvalidatorByParentPage** When a content node is changed, this invalidates a cache by the ID of that node's parent node.
 
 # Maintainers
