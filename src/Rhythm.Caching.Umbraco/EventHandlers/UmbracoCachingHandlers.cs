@@ -168,6 +168,7 @@
             ContentService.Moving += ContentService_Moving;
             ContentService.Moved += ContentService_Moved;
             ContentService.Published += ContentService_Published;
+            ContentService.UnPublished += ContentService_UnPublished;
             ContentService.Deleted += ContentService_Deleted;
             PageCacheRefresher.CacheUpdated += PageCacheRefresher_CacheUpdated;
 
@@ -196,6 +197,17 @@
                     }
                 }
             }
+        }
+
+        /// <summary>
+        /// Content cache was unpublished
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ContentService_UnPublished(IPublishingStrategy sender, PublishEventArgs<IContent> e)
+        {
+            var nodes = e.PublishedEntities;
+            HandleChangedContent(nodes);
         }
 
         /// <summary>
