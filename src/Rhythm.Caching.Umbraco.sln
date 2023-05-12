@@ -1,9 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rhythm.Caching.Umbraco", "Rhythm.Caching.Umbraco\Rhythm.Caching.Umbraco.csproj", "{4EDC2A86-34FE-4AFE-A68B-20791052A386}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rhythm.Caching.Umbraco", "Rhythm.Caching.Umbraco\Rhythm.Caching.Umbraco.csproj", "{4EDC2A86-34FE-4AFE-A68B-20791052A386}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
